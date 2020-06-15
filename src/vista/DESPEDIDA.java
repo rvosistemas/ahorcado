@@ -17,6 +17,7 @@ public class DESPEDIDA extends javax.swing.JFrame {
     
     public DESPEDIDA() {
         initComponents();
+        //this.setLocationRelativeTo(null);
         tipoFuente = new Fuentes(); // crea tipo de fuente para usar atributos y procedimientos
         ///----------------///--------------------///---------------///
         Etiq_Gracias_.setFont(tipoFuente.fuente(tipoFuente.GOD,0,36));

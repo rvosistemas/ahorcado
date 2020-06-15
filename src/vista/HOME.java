@@ -2,7 +2,6 @@
 package vista;
 
 import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
 import tipografias.Fuentes;
 
 /**
@@ -11,15 +10,17 @@ import tipografias.Fuentes;
  */
 public class HOME extends javax.swing.JFrame {
     // --- VARIABLES ------------crea variables para el modelo de la tabla y el tipo de fuente del formulario
-    private DefaultTableModel modelo; // se crea modelo para tabla
     private final Fuentes tipoFuente; // para llamar el metodo de tipografias personalizadas
     
     public HOME() {//constructor
         initComponents();
+        
+        ///----------------///----- VARIABLES -----///---------------///
 
         // SE PERSONALIZA TODO EL TEXTO CON FUENTES DEL PAQUETE TIPOGRAFIA
-        tipoFuente = new Fuentes(); // crea tipo de fuente para usar atributos y procedimientos
+        tipoFuente = new Fuentes(); // crea tipo de fuente para usar
         ///----------------///----- PESTAÑAS MENU -----///---------------///
+        
         menu_archivo_.setFont(tipoFuente.fuente(tipoFuente.GOD,0,16));
 
     }
@@ -102,7 +103,7 @@ public class HOME extends javax.swing.JFrame {
     private void itemMenu_Nuevo_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemMenu_Nuevo_ActionPerformed
         JUEGO j = new JUEGO();
         PanelEscritorio_.add(j);
-        j.show();
+        j.show();           
     }//GEN-LAST:event_itemMenu_Nuevo_ActionPerformed
 
     private void itemMenu_Cerrar_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemMenu_Cerrar_ActionPerformed

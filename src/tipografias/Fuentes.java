@@ -21,6 +21,10 @@ public class Fuentes {
     public String HARRY = "HARRYP__.TTF";
     public String INKED = "iNked God.ttf";
     public String NARUTO = "njnaruto.ttf";
+    public String SHADOW = "Shadow.otf";
+    public String MAYAN = "Mayan.ttf";    
+    public String CAFE = "Louis George Cafe.ttf";
+
 
     /* Font.PLAIN = 0 , Font.BOLD = 1 , Font.ITALIC = 2
  * tamanio = float

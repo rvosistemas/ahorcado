@@ -37,6 +37,8 @@ public class INICIO extends javax.swing.JFrame {
         etiq_colegio_ = new javax.swing.JLabel();
         btn_iniciar_ = new javax.swing.JButton();
         etiq_tema_ = new javax.swing.JLabel();
+        etiq_grupo2_ = new javax.swing.JLabel();
+        etiq_grupo_ = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setBackground(new java.awt.Color(255, 153, 102));
@@ -56,7 +58,7 @@ public class INICIO extends javax.swing.JFrame {
 
         etiq_colegio_.setFont(new java.awt.Font("GodOfWar", 1, 18)); // NOI18N
         etiq_colegio_.setForeground(new java.awt.Color(255, 255, 255));
-        etiq_colegio_.setText("nombre colegio");
+        etiq_colegio_.setText("I.E.R. Santa Juliana");
 
         btn_iniciar_.setBackground(new java.awt.Color(0, 102, 204));
         btn_iniciar_.setFont(new java.awt.Font("GodOfWar", 0, 14)); // NOI18N
@@ -72,38 +74,55 @@ public class INICIO extends javax.swing.JFrame {
         etiq_tema_.setForeground(new java.awt.Color(255, 255, 255));
         etiq_tema_.setText("aves de putumayo");
 
+        etiq_grupo2_.setFont(new java.awt.Font("GodOfWar", 1, 18)); // NOI18N
+        etiq_grupo2_.setForeground(new java.awt.Color(255, 255, 255));
+        etiq_grupo2_.setText("GIF: ");
+
+        etiq_grupo_.setFont(new java.awt.Font("GodOfWar", 1, 18)); // NOI18N
+        etiq_grupo_.setForeground(new java.awt.Color(255, 255, 255));
+        etiq_grupo_.setText("Grupo de investigacion en fauna");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(417, Short.MAX_VALUE)
+                .addContainerGap(328, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(etiq_grupo_, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(etiq_titulo_)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(etiq_tema_)
-                                    .addComponent(etiq_colegio_))))
-                        .addGap(71, 71, 71))
+                            .addComponent(etiq_colegio_)
+                            .addComponent(etiq_titulo_))
+                        .addGap(86, 86, 86))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(etiq_grupo2_, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(161, 161, 161))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(etiq_tema_)
+                        .addGap(115, 115, 115))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btn_iniciar_)
-                        .addGap(100, 100, 100))))
+                        .addGap(136, 136, 136))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addComponent(etiq_titulo_)
-                .addGap(43, 43, 43)
-                .addComponent(etiq_tema_)
-                .addGap(34, 34, 34)
+                .addGap(20, 20, 20)
+                .addComponent(etiq_grupo2_, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(etiq_grupo_, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(etiq_colegio_, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addGap(41, 41, 41)
+                .addComponent(etiq_titulo_)
+                .addGap(55, 55, 55)
+                .addComponent(etiq_tema_)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(btn_iniciar_)
-                .addGap(56, 56, 56))
+                .addGap(43, 43, 43))
         );
 
         pack();
@@ -140,6 +159,7 @@ public class INICIO extends javax.swing.JFrame {
     private void btn_iniciar_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_iniciar_ActionPerformed
         
         HOME h = new HOME(); // crea un objeto para el siguiente formulario
+        h.setLocationRelativeTo(null);
         h.setVisible(true);//hace visible el siguiente formulario
         this.dispose(); // oculta este formulario
         
@@ -184,6 +204,8 @@ public class INICIO extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_iniciar_;
     private javax.swing.JLabel etiq_colegio_;
+    private javax.swing.JLabel etiq_grupo2_;
+    private javax.swing.JLabel etiq_grupo_;
     private javax.swing.JLabel etiq_tema_;
     private javax.swing.JLabel etiq_titulo_;
     // End of variables declaration//GEN-END:variables
